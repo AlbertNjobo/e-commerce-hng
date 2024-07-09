@@ -1,12 +1,12 @@
 
 
 const products = [
-  { id: 1, name: 'Bold Beauty Special Lipstick', image: 'public/images/lipstick.png' },
-  { id: 2, name: 'Bold Beauty Foundation', image: 'public/images/foundation.png' },
-  { id: 3, name: 'Bold Beauty Brush Set', image: 'public/images/brush set.png' },
-  { id: 4, name: 'Bold Beauty Rejuvenating Scrub', image: 'public/images/scrub.png' },
-  { id: 5, name: 'Bold Beauty Serum', image: 'public/images/serum.png' },
-  { id: 6, name: 'Bold Beauty Cocoa Lotion', image: 'public/images/lotion.png' },
+  { id: 1, name: 'Bold Beauty Special Lipstick', image: '/images/lipstick.png' },
+  { id: 2, name: 'Bold Beauty Foundation', image: '/images/foundation.png' },
+  { id: 3, name: 'Bold Beauty Brush Set', image: '/images/brush set.png' },
+  { id: 4, name: 'Bold Beauty Rejuvenating Scrub', image: '/images/scrub.png' },
+  { id: 5, name: 'Bold Beauty Serum', image: '/images/serum.png' },
+  { id: 6, name: 'Bold Beauty Cocoa Lotion', image: '/images/lotion.png' },
 ];
 
 const ProductGrid = () => {

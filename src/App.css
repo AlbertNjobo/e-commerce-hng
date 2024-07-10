@@ -46,3 +46,73 @@ body, html {
 .read-the-docs {
   color: #888;
 }
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* App.css */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.cart-product {
+  max-width: 326.25px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 21.75px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #454444, #ABA9A9);
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product-details {
+  margin-top: 1rem;
+}
+
+.product-details h2 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.product-details p {
+  color: #d1d1d1;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.quantity-control button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-control span {
+  margin: 0 1rem;
+  color: #fff;
+}
+
+.add-to-cart-btn {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+}

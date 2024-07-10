@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -7,16 +7,16 @@ const Navbar = () => {
       
       <ul className="flex justify-center gap-[4.00rem] text-2xl">
         <li className="mr-6">
-          <a href="/" className="!text-black-900_7f hover:!text-black-900 font-inter">Home</a>
+          <Link to="/" className="!text-black-900_7f hover:!text-black-900 font-inter">Home</Link>
         </li>
         <li className="mr-6">
-          <a href="/products" className="!text-black-900_7f hover:!text-black-900">Products</a>
+          <Link to="/products" className="!text-black-900_7f hover:!text-black-900">Products</Link>
         </li>
         <li className="mr-6">
-          <a href="/cart" className="!text-black-900_7f hover:!text-black-900">Cart</a>
+          <Link to="/cart" className="!text-black-900_7f hover:!text-black-900">Cart</Link>
         </li>
         <li>
-          <a href="/contact" className="!text-black-900_7f hover:!text-black-900 mr-[0.25rem]">Contact Us</a>
+          <Link to="/contact" className="!text-black-900_7f hover:!text-black-900 mr-[0.25rem]">Contact Us</Link>
         </li>
       </ul>
     </nav>

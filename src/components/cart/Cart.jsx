@@ -1,9 +1,12 @@
+// src/components/cart/Cart.jsx
 import PropTypes from 'prop-types';
-import CartProduct from './CartProduct.jsx';
+import CartProduct from './CartProduct';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = ({ products }) => {
   const [cartProducts, setCartProducts] = useState(products.map(product => ({ ...product, quantity: 1 })));
+  const navigate = useNavigate();
 
   const handleIncrease = (id) => {
     setCartProducts(cartProducts.map(product =>
@@ -15,6 +18,10 @@ const Cart = ({ products }) => {
     setCartProducts(cartProducts.map(product =>
       product.id === id && product.quantity > 1 ? { ...product, quantity: product.quantity - 1 } : product
     ));
+  };
+
+  const handleCheckout = () => {
+    navigate('/checkout');
   };
 
   return (
@@ -31,7 +38,7 @@ const Cart = ({ products }) => {
         ))}
       </div>
       <div className="flex justify-center mt-10">
-        <button className="bg-gray-800 text-white px-8 py-4 rounded-md text-lg">Check Out</button>
+        <button className="bg-gray-800 text-white px-8 py-4 rounded-md text-lg" onClick={handleCheckout}>Check Out</button>
       </div>
     </section>
   );

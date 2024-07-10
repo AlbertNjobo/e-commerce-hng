@@ -4,6 +4,7 @@ import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import ProductGrid from './components/productGrid/ProductGrid';
 import Cart from './components/cart/Cart';
+import Checkout from './components/checkout/Checkout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,17 +19,20 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <ProductGrid products={products} />
-          </>
-        } />
-        <Route path="/cart" element={<Cart products={products} />} />
-      </Routes>
-      <Footer />
+      <div className="bg-custom-bg min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <ProductGrid products={products} />
+            </>
+          } />
+          <Route path="/cart" element={<Cart products={products} />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
 }
